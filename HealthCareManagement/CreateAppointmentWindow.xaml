@@ -1,0 +1,33 @@
+﻿<Window x:Class="HealthCareManagement.CreateAppointmentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:HealthCareManagement"
+        Title="Create Appointment" Height="450" Width="800">
+
+    <Window.Resources>
+        <!-- Define the BooleanToVisibilityConverter here -->
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+    </Window.Resources>
+
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Select Doctor" Margin="5"/>
+            <ComboBox x:Name="cmbDoctors" Width="200" Margin="5"/>
+            <TextBlock Text="Enter DateTime" Margin="5"/>
+            <DatePicker x:Name="dpDate" Width="200" Margin="5"/>
+
+            <Grid Margin="5" Width="200">
+                <TextBox x:Name="txtTime" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <TextBlock Text="Enter time" Foreground="Gray" VerticalAlignment="Center" Margin="5,0,0,0"
+                           IsHitTestVisible="False" 
+                           Visibility="{Binding ElementName=txtTime, Path=IsKeyboardFocusWithin, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+            </Grid>
+
+            <TextBlock Text="Kind of Disease" Margin="5"/>
+            <TextBox x:Name="txtDisease" Width="200" Margin="5"/>
+            <CheckBox x:Name="chkEmergency" Content="Emergency?" Margin="5"/>
+            <Button Content="Reserve Appointment" Click="ReserveAppointment_Click" Margin="5"/>
+            <Button Content="Back" Click="Back_Click" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>

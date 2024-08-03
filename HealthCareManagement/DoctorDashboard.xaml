@@ -1,0 +1,13 @@
+﻿<Window x:Class="HealthCareManagement.DoctorDashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Doctor Dashboard" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Content="View List of Patients" Click="ViewPatients_Click" Margin="5"/>
+            <Button Content="View List of Appointments by Date" Click="ViewAppointments_Click" Margin="5"/>
+            
+            <Button Content="Logout" Click="Logout_Click" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>

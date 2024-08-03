@@ -1,0 +1,12 @@
+﻿<Window x:Class="HealthCareManagement.ViewPastAppointmentsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="View Past Appointments" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Past Appointment History" Margin="5"/>
+            <ListBox x:Name="lbPastAppointments" Width="400" Height="200" Margin="5"/>
+            <Button Content="Back" Click="Back_Click" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>

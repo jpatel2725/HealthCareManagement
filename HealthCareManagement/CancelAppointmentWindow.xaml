@@ -1,0 +1,15 @@
+﻿<Window x:Class="HealthCareManagement.CancelAppointmentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Cancel Appointment" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Select Reserved Appointment" Margin="5"/>
+            <ComboBox x:Name="cmbAppointments" Width="200" Margin="5"/>
+            <TextBlock Text="Reason" Margin="5"/>
+            <TextBox x:Name="txtReason" Width="200" Margin="5"/>
+            <Button Content="Cancel Appointment" Click="CancelAppointment_Click" Margin="5"/>
+            <Button Content="Back" Click="Back_Click" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,13 @@
+﻿<Window x:Class="HealthCareManagement.ManageAppointmentsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Manage Appointments" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Content="Create Appointment" Click="CreateAppointment_Click" Margin="5"/>
+            <Button Content="Cancel Appointment" Click="CancelAppointment_Click" Margin="5"/>
+            <Button Content="View Past Appointments" Click="ViewPastAppointments_Click" Margin="5"/>
+            <Button Content="Back" Click="Back_Click" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>

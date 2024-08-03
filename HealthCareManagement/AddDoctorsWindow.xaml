@@ -1,0 +1,15 @@
+﻿<Window x:Class="HealthCareManagement.AddDoctorsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add Doctors" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Doctor Name" Margin="5"/>
+            <TextBox x:Name="txtDoctorName" Width="200" Margin="5"/>
+            <TextBlock Text="Specialization" Margin="5"/>
+            <TextBox x:Name="txtSpecialization" Width="200" Margin="5"/>
+            <Button Content="Add Doctor" Click="AddDoctor_Click" Margin="5"/>
+            <Button Content="Back" Click="Back_Click" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>
